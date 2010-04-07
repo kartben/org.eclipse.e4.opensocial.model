@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2010 Sierra Wireless Inc. and others.&#xD;&#xA;All rights reserved. This program and the accompanying materials&#xD;&#xA;are made available under the terms of the Eclipse Public License v1.0&#xD;&#xA;which accompanies this distribution, and is available at&#xD;&#xA;http://www.eclipse.org/legal/epl-v10.html&#xD;&#xA;&#xD;&#xA;  Contributors:&#xD;&#xA;     Benjamin Cabe, Sierra Wireless - initial API and implementation"
+    modelDirectory="/org.eclipse.e4.opensocial.model/src" modelPluginID="org.eclipse.e4.opensocial.model"
+    modelName="Opensocial" richClientPlatform="true" importerID="org.eclipse.xsd.ecore.importer"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>opensocial-1.0.xsd</foreignModel>
+  <genPackages prefix="OpenSocial" basePackage="org.eclipse.e4.opensocial" resource="XML"
+      disposableProviderFactory="true" ecorePackage="opensocial-1.0.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="opensocial-1.0.ecore#//Authz">
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//Authz/none"/>
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//Authz/signed"/>
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//Authz/oauth"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="opensocial-1.0.ecore#//Datatype">
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//Datatype/string"/>
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//Datatype/hidden"/>
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//Datatype/bool"/>
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//Datatype/enum"/>
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//Datatype/number"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="opensocial-1.0.ecore#//LanguageDirection">
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//LanguageDirection/ltr"/>
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//LanguageDirection/rtl"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="opensocial-1.0.ecore#//Method">
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//Method/GET"/>
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//Method/POST"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="opensocial-1.0.ecore#//Mode">
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//Mode/base64"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="opensocial-1.0.ecore#//ParamLocation">
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//ParamLocation/authHeader"/>
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//ParamLocation/uriQuery"/>
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//ParamLocation/postBody"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="opensocial-1.0.ecore#//Rel">
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//Rel/gadgetsHelp"/>
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//Rel/gadgetsSupport"/>
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//Rel/icon"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="opensocial-1.0.ecore#//Type">
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//Type/html"/>
+      <genEnumLiterals ecoreEnumLiteral="opensocial-1.0.ecore#//Type/url"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="opensocial-1.0.ecore#//AuthzObject"/>
+    <genDataTypes ecoreDataType="opensocial-1.0.ecore#//DatatypeObject"/>
+    <genDataTypes ecoreDataType="opensocial-1.0.ecore#//LanguageDirectionObject"/>
+    <genDataTypes ecoreDataType="opensocial-1.0.ecore#//MethodObject"/>
+    <genDataTypes ecoreDataType="opensocial-1.0.ecore#//ModeObject"/>
+    <genDataTypes ecoreDataType="opensocial-1.0.ecore#//ParamLocationObject"/>
+    <genDataTypes ecoreDataType="opensocial-1.0.ecore#//RelObject"/>
+    <genDataTypes ecoreDataType="opensocial-1.0.ecore#//TypeObject"/>
+    <genClasses ecoreClass="opensocial-1.0.ecore#//Authorization">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Authorization/url"/>
+    </genClasses>
+    <genClasses ecoreClass="opensocial-1.0.ecore#//Content">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Content/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Content/href"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Content/preferredHeight"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Content/preferredWidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Content/scrolling"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Content/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Content/view"/>
+    </genClasses>
+    <genClasses ecoreClass="opensocial-1.0.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//DocumentRoot/module"/>
+    </genClasses>
+    <genClasses ecoreClass="opensocial-1.0.ecore#//EnumValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//EnumValue/displayValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//EnumValue/value"/>
+    </genClasses>
+    <genClasses ecoreClass="opensocial-1.0.ecore#//GadgetFeature">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//GadgetFeature/param"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//GadgetFeature/feature"/>
+    </genClasses>
+    <genClasses ecoreClass="opensocial-1.0.ecore#//Icon">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Icon/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Icon/mode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Icon/type"/>
+    </genClasses>
+    <genClasses ecoreClass="opensocial-1.0.ecore#//Link">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Link/href"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Link/rel"/>
+    </genClasses>
+    <genClasses ecoreClass="opensocial-1.0.ecore#//Locale">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//Locale/msg"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Locale/country"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Locale/lang"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Locale/languageDirection"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Locale/messages"/>
+    </genClasses>
+    <genClasses ecoreClass="opensocial-1.0.ecore#//ModulePrefs">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//ModulePrefs/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//ModulePrefs/require"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//ModulePrefs/optional"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//ModulePrefs/preload"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//ModulePrefs/icon"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//ModulePrefs/locale"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//ModulePrefs/link"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//ModulePrefs/oAuth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//ModulePrefs/author"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//ModulePrefs/authorEmail"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//ModulePrefs/category"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//ModulePrefs/category2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//ModulePrefs/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//ModulePrefs/directoryTitle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//ModulePrefs/screenshot"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//ModulePrefs/thumbnail"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//ModulePrefs/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//ModulePrefs/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//ModulePrefs/height"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//ModulePrefs/titleUrl"/>
+    </genClasses>
+    <genClasses ecoreClass="opensocial-1.0.ecore#//Module">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//Module/modulePrefs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//Module/userPref"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//Module/content"/>
+    </genClasses>
+    <genClasses ecoreClass="opensocial-1.0.ecore#//Msg">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Msg/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Msg/desc"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Msg/name"/>
+    </genClasses>
+    <genClasses ecoreClass="opensocial-1.0.ecore#//OAuthResource">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//OAuthResource/method"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//OAuthResource/paramLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//OAuthResource/url"/>
+    </genClasses>
+    <genClasses ecoreClass="opensocial-1.0.ecore#//OAuth">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//OAuth/service"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//OAuth/name"/>
+    </genClasses>
+    <genClasses ecoreClass="opensocial-1.0.ecore#//Param">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Param/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Param/name"/>
+    </genClasses>
+    <genClasses ecoreClass="opensocial-1.0.ecore#//Preload">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Preload/authz"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Preload/href"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Preload/oauthRequestToken"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Preload/oauthRequestTokenSecret"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Preload/oauthServiceName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Preload/oauthTokenName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Preload/signOwner"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Preload/signViewer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//Preload/views"/>
+    </genClasses>
+    <genClasses ecoreClass="opensocial-1.0.ecore#//Service">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//Service/request"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//Service/access"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//Service/authorization"/>
+    </genClasses>
+    <genClasses ecoreClass="opensocial-1.0.ecore#//UserPref">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference opensocial-1.0.ecore#//UserPref/enumValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//UserPref/datatype"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//UserPref/defaultValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//UserPref/displayName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//UserPref/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute opensocial-1.0.ecore#//UserPref/required"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
