@@ -172,6 +172,7 @@ public class LocaleImpl extends EObjectImpl implements Locale {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	public EList<Msg> getMsg() {
 		if (msg == null) {
 			msg = new EObjectContainmentEList<Msg>(Msg.class, this, OpenSocialPackage.LOCALE__MSG);

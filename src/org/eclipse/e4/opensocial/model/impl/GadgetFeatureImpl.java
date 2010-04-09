@@ -54,7 +54,6 @@ public class GadgetFeatureImpl extends EObjectImpl implements GadgetFeature {
 	 * @ordered
 	 */
 	protected EList<Param> param;
-
 	/**
 	 * The default value of the '{@link #getFeature() <em>Feature</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -99,6 +98,7 @@ public class GadgetFeatureImpl extends EObjectImpl implements GadgetFeature {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	public EList<Param> getParam() {
 		if (param == null) {
 			param = new EObjectContainmentEList<Param>(Param.class, this, OpenSocialPackage.GADGET_FEATURE__PARAM);

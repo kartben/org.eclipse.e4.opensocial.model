@@ -57,7 +57,6 @@ public class ModuleImpl extends EObjectImpl implements Module {
 	 * @ordered
 	 */
 	protected ModulePrefs modulePrefs;
-
 	/**
 	 * The cached value of the '{@link #getUserPref() <em>User Pref</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -67,7 +66,6 @@ public class ModuleImpl extends EObjectImpl implements Module {
 	 * @ordered
 	 */
 	protected EList<UserPref> userPref;
-
 	/**
 	 * The cached value of the '{@link #getContent() <em>Content</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -145,6 +143,7 @@ public class ModuleImpl extends EObjectImpl implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	public EList<UserPref> getUserPref() {
 		if (userPref == null) {
 			userPref = new EObjectContainmentEList<UserPref>(UserPref.class, this, OpenSocialPackage.MODULE__USER_PREF);
@@ -157,6 +156,7 @@ public class ModuleImpl extends EObjectImpl implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	public EList<Content> getContent() {
 		if (content == null) {
 			content = new EObjectContainmentEList<Content>(Content.class, this, OpenSocialPackage.MODULE__CONTENT);

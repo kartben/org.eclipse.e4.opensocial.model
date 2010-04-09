@@ -54,7 +54,6 @@ public class OAuthImpl extends EObjectImpl implements OAuth {
 	 * @ordered
 	 */
 	protected EList<Service> service;
-
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -99,6 +98,7 @@ public class OAuthImpl extends EObjectImpl implements OAuth {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	public EList<Service> getService() {
 		if (service == null) {
 			service = new EObjectContainmentEList<Service>(Service.class, this, OpenSocialPackage.OAUTH__SERVICE);

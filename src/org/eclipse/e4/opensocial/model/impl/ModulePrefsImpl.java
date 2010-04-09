@@ -355,6 +355,7 @@ public class ModulePrefsImpl extends EObjectImpl implements ModulePrefs {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	public EList<GadgetFeature> getRequire() {
 		return getGroup().list(OpenSocialPackage.Literals.MODULE_PREFS__REQUIRE);
 	}
@@ -364,6 +365,7 @@ public class ModulePrefsImpl extends EObjectImpl implements ModulePrefs {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	public EList<GadgetFeature> getOptional() {
 		return getGroup().list(OpenSocialPackage.Literals.MODULE_PREFS__OPTIONAL);
 	}
@@ -373,6 +375,7 @@ public class ModulePrefsImpl extends EObjectImpl implements ModulePrefs {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	public EList<Preload> getPreload() {
 		return getGroup().list(OpenSocialPackage.Literals.MODULE_PREFS__PRELOAD);
 	}
@@ -382,6 +385,7 @@ public class ModulePrefsImpl extends EObjectImpl implements ModulePrefs {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	public EList<Icon> getIcon() {
 		return getGroup().list(OpenSocialPackage.Literals.MODULE_PREFS__ICON);
 	}
@@ -391,6 +395,7 @@ public class ModulePrefsImpl extends EObjectImpl implements ModulePrefs {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	public EList<Locale> getLocale() {
 		return getGroup().list(OpenSocialPackage.Literals.MODULE_PREFS__LOCALE);
 	}
@@ -400,6 +405,7 @@ public class ModulePrefsImpl extends EObjectImpl implements ModulePrefs {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	public EList<Link> getLink() {
 		return getGroup().list(OpenSocialPackage.Literals.MODULE_PREFS__LINK);
 	}
@@ -409,6 +415,7 @@ public class ModulePrefsImpl extends EObjectImpl implements ModulePrefs {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	public EList<OAuth> getOAuth() {
 		return getGroup().list(OpenSocialPackage.Literals.MODULE_PREFS__OAUTH);
 	}

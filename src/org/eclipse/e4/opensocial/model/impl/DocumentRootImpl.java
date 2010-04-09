@@ -57,7 +57,6 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
 	 * @ordered
 	 */
 	protected FeatureMap mixed;
-
 	/**
 	 * The cached value of the '{@link #getXMLNSPrefixMap() <em>XMLNS Prefix Map</em>}' map.
 	 * <!-- begin-user-doc -->
@@ -67,7 +66,6 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
 	 * @ordered
 	 */
 	protected EMap<String, String> xMLNSPrefixMap;
-
 	/**
 	 * The cached value of the '{@link #getXSISchemaLocation() <em>XSI Schema Location</em>}' map.
 	 * <!-- begin-user-doc -->
@@ -114,6 +112,7 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	public EMap<String, String> getXMLNSPrefixMap() {
 		if (xMLNSPrefixMap == null) {
 			xMLNSPrefixMap = new EcoreEMap<String,String>(EcorePackage.Literals.ESTRING_TO_STRING_MAP_ENTRY, EStringToStringMapEntryImpl.class, this, OpenSocialPackage.DOCUMENT_ROOT__XMLNS_PREFIX_MAP);
@@ -126,6 +125,7 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	public EMap<String, String> getXSISchemaLocation() {
 		if (xSISchemaLocation == null) {
 			xSISchemaLocation = new EcoreEMap<String,String>(EcorePackage.Literals.ESTRING_TO_STRING_MAP_ENTRY, EStringToStringMapEntryImpl.class, this, OpenSocialPackage.DOCUMENT_ROOT__XSI_SCHEMA_LOCATION);

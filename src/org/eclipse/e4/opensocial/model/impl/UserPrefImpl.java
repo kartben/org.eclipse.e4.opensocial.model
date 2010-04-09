@@ -193,6 +193,7 @@ public class UserPrefImpl extends EObjectImpl implements UserPref {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	public EList<EnumValue> getEnumValue() {
 		if (enumValue == null) {
 			enumValue = new EObjectContainmentEList<EnumValue>(EnumValue.class, this, OpenSocialPackage.USER_PREF__ENUM_VALUE);

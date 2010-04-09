@@ -49,7 +49,6 @@ public class ServiceImpl extends EObjectImpl implements Service {
 	 * @ordered
 	 */
 	protected OAuthResource request;
-
 	/**
 	 * The cached value of the '{@link #getAccess() <em>Access</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -59,7 +58,6 @@ public class ServiceImpl extends EObjectImpl implements Service {
 	 * @ordered
 	 */
 	protected OAuthResource access;
-
 	/**
 	 * The cached value of the '{@link #getAuthorization() <em>Authorization</em>}' containment reference.
 	 * <!-- begin-user-doc -->
