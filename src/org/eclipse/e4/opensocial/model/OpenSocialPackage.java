@@ -297,13 +297,22 @@ public interface OpenSocialPackage extends EPackage {
 	int GADGET_FEATURE__FEATURE = 1;
 
 	/**
+	 * The feature id for the '<em><b>Version</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GADGET_FEATURE__VERSION = 2;
+
+	/**
 	 * The number of structural features of the '<em>Gadget Feature</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GADGET_FEATURE_FEATURE_COUNT = 2;
+	int GADGET_FEATURE_FEATURE_COUNT = 3;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.e4.opensocial.model.impl.IconImpl <em>Icon</em>}' class.
@@ -1468,6 +1477,17 @@ public interface OpenSocialPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getGadgetFeature_Feature();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.e4.opensocial.model.GadgetFeature#getVersion <em>Version</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Version</em>'.
+	 * @see org.eclipse.e4.opensocial.model.GadgetFeature#getVersion()
+	 * @see #getGadgetFeature()
+	 * @generated
+	 */
+	EAttribute getGadgetFeature_Version();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.e4.opensocial.model.Icon <em>Icon</em>}'.
@@ -2635,6 +2655,14 @@ public interface OpenSocialPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute GADGET_FEATURE__FEATURE = eINSTANCE.getGadgetFeature_Feature();
+
+		/**
+		 * The meta object literal for the '<em><b>Version</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GADGET_FEATURE__VERSION = eINSTANCE.getGadgetFeature_Version();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.e4.opensocial.model.impl.IconImpl <em>Icon</em>}' class.

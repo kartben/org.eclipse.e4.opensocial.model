@@ -39,6 +39,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link org.eclipse.e4.opensocial.model.impl.GadgetFeatureImpl#getParam <em>Param</em>}</li>
  *   <li>{@link org.eclipse.e4.opensocial.model.impl.GadgetFeatureImpl#getFeature <em>Feature</em>}</li>
+ *   <li>{@link org.eclipse.e4.opensocial.model.impl.GadgetFeatureImpl#getVersion <em>Version</em>}</li>
  * </ul>
  * </p>
  *
@@ -73,6 +74,25 @@ public class GadgetFeatureImpl extends EObjectImpl implements GadgetFeature {
 	 * @ordered
 	 */
 	protected String feature = FEATURE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getVersion() <em>Version</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getVersion()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VERSION_EDEFAULT = null;
+	/**
+	 * The cached value of the '{@link #getVersion() <em>Version</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getVersion()
+	 * @generated
+	 * @ordered
+	 */
+	protected String version = VERSION_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -132,6 +152,27 @@ public class GadgetFeatureImpl extends EObjectImpl implements GadgetFeature {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getVersion() {
+		return version;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setVersion(String newVersion) {
+		String oldVersion = version;
+		version = newVersion;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenSocialPackage.GADGET_FEATURE__VERSION, oldVersion, version));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -153,6 +194,8 @@ public class GadgetFeatureImpl extends EObjectImpl implements GadgetFeature {
 				return getParam();
 			case OpenSocialPackage.GADGET_FEATURE__FEATURE:
 				return getFeature();
+			case OpenSocialPackage.GADGET_FEATURE__VERSION:
+				return getVersion();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -173,6 +216,9 @@ public class GadgetFeatureImpl extends EObjectImpl implements GadgetFeature {
 			case OpenSocialPackage.GADGET_FEATURE__FEATURE:
 				setFeature((String)newValue);
 				return;
+			case OpenSocialPackage.GADGET_FEATURE__VERSION:
+				setVersion((String)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -191,6 +237,9 @@ public class GadgetFeatureImpl extends EObjectImpl implements GadgetFeature {
 			case OpenSocialPackage.GADGET_FEATURE__FEATURE:
 				setFeature(FEATURE_EDEFAULT);
 				return;
+			case OpenSocialPackage.GADGET_FEATURE__VERSION:
+				setVersion(VERSION_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -207,6 +256,8 @@ public class GadgetFeatureImpl extends EObjectImpl implements GadgetFeature {
 				return param != null && !param.isEmpty();
 			case OpenSocialPackage.GADGET_FEATURE__FEATURE:
 				return FEATURE_EDEFAULT == null ? feature != null : !FEATURE_EDEFAULT.equals(feature);
+			case OpenSocialPackage.GADGET_FEATURE__VERSION:
+				return VERSION_EDEFAULT == null ? version != null : !VERSION_EDEFAULT.equals(version);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -223,6 +274,8 @@ public class GadgetFeatureImpl extends EObjectImpl implements GadgetFeature {
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (feature: ");
 		result.append(feature);
+		result.append(", version: ");
+		result.append(version);
 		result.append(')');
 		return result.toString();
 	}

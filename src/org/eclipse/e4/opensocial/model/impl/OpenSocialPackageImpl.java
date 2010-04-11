@@ -545,6 +545,15 @@ public class OpenSocialPackageImpl extends EPackageImpl implements OpenSocialPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getGadgetFeature_Version() {
+		return (EAttribute)gadgetFeatureEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getIcon() {
 		return iconEClass;
 	}
@@ -1394,6 +1403,7 @@ public class OpenSocialPackageImpl extends EPackageImpl implements OpenSocialPac
 		gadgetFeatureEClass = createEClass(GADGET_FEATURE);
 		createEReference(gadgetFeatureEClass, GADGET_FEATURE__PARAM);
 		createEAttribute(gadgetFeatureEClass, GADGET_FEATURE__FEATURE);
+		createEAttribute(gadgetFeatureEClass, GADGET_FEATURE__VERSION);
 
 		iconEClass = createEClass(ICON);
 		createEAttribute(iconEClass, ICON__VALUE);
@@ -1559,6 +1569,7 @@ public class OpenSocialPackageImpl extends EPackageImpl implements OpenSocialPac
 		initEClass(gadgetFeatureEClass, GadgetFeature.class, "GadgetFeature", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getGadgetFeature_Param(), this.getParam(), null, "param", null, 0, -1, GadgetFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGadgetFeature_Feature(), theXMLTypePackage.getString(), "feature", null, 1, 1, GadgetFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGadgetFeature_Version(), theXMLTypePackage.getString(), "version", null, 1, 1, GadgetFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(iconEClass, Icon.class, "Icon", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getIcon_Value(), theXMLTypePackage.getString(), "value", null, 0, 1, Icon.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1898,6 +1909,14 @@ public class OpenSocialPackageImpl extends EPackageImpl implements OpenSocialPac
 		   new String[] {
 			 "kind", "attribute",
 			 "name", "feature",
+			 "namespace", "##targetNamespace"
+		   });		
+		addAnnotation
+		  (getGadgetFeature_Version(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "version",
 			 "namespace", "##targetNamespace"
 		   });		
 		addAnnotation

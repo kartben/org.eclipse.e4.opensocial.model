@@ -24,6 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link org.eclipse.e4.opensocial.model.GadgetFeature#getParam <em>Param</em>}</li>
  *   <li>{@link org.eclipse.e4.opensocial.model.GadgetFeature#getFeature <em>Feature</em>}</li>
+ *   <li>{@link org.eclipse.e4.opensocial.model.GadgetFeature#getVersion <em>Version</em>}</li>
  * </ul>
  * </p>
  *
@@ -75,5 +76,32 @@ public interface GadgetFeature extends EObject {
 	 * @generated
 	 */
 	void setFeature(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Version</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Version</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Version</em>' attribute.
+	 * @see #setVersion(String)
+	 * @see org.eclipse.e4.opensocial.model.OpenSocialPackage#getGadgetFeature_Version()
+	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        extendedMetaData="kind='attribute' name='version' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	String getVersion();
+
+	/**
+	 * Sets the value of the '{@link org.eclipse.e4.opensocial.model.GadgetFeature#getVersion <em>Version</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Version</em>' attribute.
+	 * @see #getVersion()
+	 * @generated
+	 */
+	void setVersion(String value);
 
 } // GadgetFeature
